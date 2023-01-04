@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        body {
+            background-image: linear-gradient(to right, rgb(54, 203, 232), rgb(22, 189, 86));
+            color: white;
+        }
+
+        .container {
+            height: 900px;
+        }
+
+        .content {
+            margin-top: 10%;
+        }
+
+        h3 {
+            font-size: 20px;
+            color: white;
+            text-shadow: 2px 2px grey;
+        }
+
+        span {
+            font-size: 30px;
+        }
+
+        h1 {
+            font-size: 150px;
+            animation: slideR 2s ease-in-out;
+            animation-delay: 1s;
+        }
+
+        @keyframes slideR {
+            0% {
+            transform: translateX(50px);
+            opacity: 0;
+            }
+            50% {
+                opacity: 0.25;
+            }
+            100% {
+            transform: translateX(0);
+            opacity: 1;
+            }
+        }
+
+        p {
+            font-size: 40px;
+            font-weight: 400;
+        }
+
+        .arrow {
+            position: absolute;
+            bottom : 150px;
+            margin-left: 50%;
+            border-right: 5px white solid;
+            border-bottom: 5px white solid;
+            rotate: 45deg;
+            width: 100px;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h3>www.<span>BANDICAM</span>.COM</h3>
+        <div class="content">
+            <h1>Animate.CSS</h1>
+            <p>Level Up Your Website with Animate.css</p>
+            <div class="arrow"></div>
+        </div>
+    </section>
+</body>
+</html>
